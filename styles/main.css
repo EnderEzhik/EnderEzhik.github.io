@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: yellowgreen;
+}
+
+.logo {
+    color: #ededed;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.navbar a {
+    color: #ededed;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #00abf0;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 100px;
+}
+
+/* Home Section */
+.home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(0, 171, 240, 0.1));
+    clip-path: polygon(100% 0, 100% 100%, 50% 100%, 0 0);
+    z-index: -1;
+}
+
+.home-content {
+    max-width: 600px;
+    animation: slideRight 1s ease forwards;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    color: #00abf0;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.home-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+}
+
+/* About Section */
+.about {
+    min-height: 40vh;
+    padding: 100px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #00abf0;
+    margin-bottom: 30px;
+    position: relative;
+    animation: slideBottom 1s ease forwards;
+    opacity: 0;
+}
+
+.about h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #00abf0;
+    border-radius: 2px;
+}
+
+.about p {
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ededed;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    margin-bottom: 40px;
+}
+
+.achievements {
+    max-width: 800px;
+    margin: 0 auto;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.achievements h3 {
+    color: #00abf0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li {
+    background: rgba(0, 171, 240, 0.1);
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.achievement-title {
+    display: block;
+    font-weight: 600;
+}
+
+.achievement-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.achievements li:hover .achievement-details {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.achievement-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+/* Projects Section */
+.projects {
+    width: 90%;
+    padding: 100px 5%;
+}
+
+.project {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: rgba(0, 171, 240, 0.1);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 171, 240, 0.2);
+}
+
+.project-header {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #00abf0;
+}
+
+.project-content {
+    max-width: 850px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-technical-stack {
+    color: #00abf0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.project-technical-stack b {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.project-technical-stack span {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 10px;
+    background: rgba(0, 171, 240, 0.1);
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to bottom, #081b29, #0a2a3a);
+    padding: 40px 5%;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(0, 171, 240, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 171, 240, 0.1) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ededed;
+    position: relative;
+    z-index: 2;
+}
+
+.contacts span {
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contacts span:hover {
+    color: #00abf0;
+    transform: translateX(5px);
+}
+
+.contacts span:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00abf0;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.contacts span:first-child::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #00abf0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.contacts span:first-child:hover::after {
+    transform: scaleX(1);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #00abf0;
+    border-radius: 6px;
+    color: #081b29;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 5%;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+
+/* Panel Styles for Achievement Details */
+.achievement-details.panel {
+    background: rgba(0, 171, 240, 0.1);
+    border-radius: 8px;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.achievement-details.panel p {
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 0.9em;
+    color: #a0a0a0;
+    border-bottom: 1px solid rgba(0, 171, 240, 0.2);
+}
+
+.panel-footer {
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+/* GitHub Link Styles */
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: rgba(0, 171, 240, 0.2);
+    color: #ededed;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.85em;
+}
+
+.github-link:hover {
+    background: rgba(0, 171, 240, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 171, 240, 0.2);
+}
+
+.github-link i {
+    font-size: 1.1em;
+}
