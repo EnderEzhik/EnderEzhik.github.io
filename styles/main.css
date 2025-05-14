@@ -129,12 +129,17 @@ main {
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
     opacity: 0;
+}
+
+.home-content ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
 }
 
 .home-buttons {
@@ -278,6 +283,7 @@ main {
 }
 
 .project-technical-stack {
+    margin-bottom: 8px;
     color: #00abf0;
     font-size: 16px;
     line-height: 1.8;
