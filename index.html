@@ -1,212 +1,179 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">Logo</a>
-      <nav class="navbar">
-        <a href="#home">Главная</a>
-        <a href="#about">Мой опыт</a>
-        <a href="#projects">Мои проекты</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-    </header>
-    <main>
-      <section class="home" id="home">
-        <div class="home-content">
-          <h1>Андрей Чернов</h1>
-          <h3>Backend Developer</h3>
-          <div>
-            <p>
-              Занимаюсь программированием более 4 лет. За это время я успел
-              поработать с разными направлениями и технологиями, включая
-              <strong>C#, Python, Go, C++, Lua и Java</strong>.
-            </p>
-
-            <p>Разрабатывал приложения в различных сферах:</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Logo</a>
+            <nav class="navbar">
+                <a href="#home">Главная</a>
+                <a href="#about">Мой опыт</a>
+                <a href="#projects">Мои проекты</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <input type="checkbox" name="burger" id="burger" />
+            <label for="burger" class="burger-close"><i class="bx bx-menu bx-lg"></i></label>
+            <label for="burger" class="burger-open"><i class="bx bx-x bx-lg"></i></label>
             <ul>
-              <li><strong>Веб-приложения</strong></li>
-              <li>
-                <strong>Десктопные программы</strong> (включая решения с GUI под
-                Windows)
-              </li>
-              <li><strong>Мобильные приложения</strong></li>
-              <li><strong>Игры</strong></li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Мой опыт</a></li>
+                <li><a href="#projects">Мои проекты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
+        </header>
+        <main>
+            <section class="home" id="home">
+                <div class="home-content">
+                    <h1>Андрей Чернов</h1>
+                    <h3>Backend Developer</h3>
+                    <div>
+                        <p>
+                            Занимаюсь программированием более 4 лет. За это время я успел поработать с разными
+                            направлениями и технологиями, включая
+                            <strong>C#, Python, Go, C++, Lua и Java</strong>.
+                        </p>
 
-            <p>
-              Мой основной и любимый язык — <strong>C#</strong>, благодаря его
-              мощной экосистеме. На нём я создал большинство своих проектов:
-            </p>
-            <ul>
-              <li>Телеграм-боты</li>
-              <li>Консольные утилиты</li>
-              <li>Десктопные приложения (Windows Forms, WPF)</li>
-              <li>Фоновые службы для Windows</li>
-            </ul>
+                        <p>Разрабатывал приложения в различных сферах:</p>
+                        <ul>
+                            <li><strong>Веб-приложения</strong></li>
+                            <li><strong>Десктопные программы</strong> (включая решения с GUI под Windows)</li>
+                            <li><strong>Мобильные приложения</strong></li>
+                            <li><strong>Игры</strong></li>
+                        </ul>
 
-            <p>
-              Сейчас углубленно изучаю <strong>ASP.NET Core</strong> и
-              разрабатываю <strong>RESTful API</strong> в связке с
-              <strong>Entity Framework</strong>.
-            </p>
-          </div>
-          <div class="home-buttons">
-            <a href="#projects" class="btn">Смотреть проекты</a>
-            <a href="#contacts" class="btn">Связаться со мной</a>
-          </div>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <h2>Опыт</h2>
-        <div class="achievements">
-          <ul>
-            <li>
-              <span class="achievement-title">Яндекс лицей</span>
-              <div class="achievement-details panel">
-                <p>Основы программирования на языке Python (1 год)</p>
-              </div>
-              <div class="achievement-details panel">
-                <p>
-                  Основы промышленного программирования на языке Python (1 год)
-                </p>
-              </div>
-            </li>
-            <li>
-              <span class="achievement-title">Samsung IT-school</span>
-              <div class="achievement-details panel">
-                <p>Мобильная разработка для Android на Java (не окончено)</p>
-              </div>
-            </li>
-            <li>
-              <span class="achievement-title">Фриланс</span>
-              <div class="achievement-details panel">
-                <p>
-                  Проектирование и разработка телеграмм бота для регистрации на
-                  мероприятие
-                </p>
-                <div class="panel-footer">
-                  <a
-                    href="https://github.com/EnderEzhik/RegiBot"
-                    class="github-link"
-                    target="_blank"
-                  >
-                    <i class="bx bxl-github"></i> GitHub репозиторий
-                  </a>
+                        <p>
+                            Мой основной и любимый язык — <strong>C#</strong>, благодаря его мощной экосистеме. На нём я
+                            создал большинство своих проектов:
+                        </p>
+                        <ul>
+                            <li>Телеграм-боты</li>
+                            <li>Консольные утилиты</li>
+                            <li>Десктопные приложения (Windows Forms, WPF)</li>
+                            <li>Фоновые службы для Windows</li>
+                        </ul>
+
+                        <p>
+                            Сейчас углубленно изучаю <strong>ASP.NET Core</strong> и разрабатываю
+                            <strong>RESTful API</strong> в связке с <strong>Entity Framework</strong>.
+                        </p>
+                    </div>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn">Смотреть проекты</a>
+                        <a href="#contacts" class="btn">Связаться со мной</a>
+                    </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <section class="project">
-          <div class="project-header"><span>REST API Server C#</span></div>
-          <div class="project-content">
-            <span
-              >Веб апи сервер для управления подписками пользователей на
-              опубликованные приложения</span
-            >
-          </div>
-          <div class="project-technical-stack">
-            <b>Используемые технологии:</b>
-            <span>ASP.NET Core</span>
-            <span>EntityFramework</span>
-            <span>MySQL</span>
-          </div>
-          <a
-            href="https://github.com/EnderEzhik/*"
-            class="github-link"
-            target="_blank"
-            style="pointer-events: none; color: #ccc"
-          >
-            <i class="bx bxl-github"></i> <strike>GitHub репозиторий</strike>
-          </a>
-        </section>
-        <section class="project">
-          <div class="project-header">
-            <span>Логгер сообщений для телеграмм аккаунта</span>
-          </div>
-          <div class="project-content">
-            <span>
-              Pyrogram клиент для обработки и сохранения входящих/исходящих
-              сообщений в аккаунте телеграмм.<br />
-              Сохраняет сообщения, историю изменений сообщений и помечает
-              удаленные сообщения.<br />
-              Сохраняет все виды медиа - фото, видео, голосовые, стикеры, гифки
-              и т.д.<br />
-              Встроены настройки для фильтрации источника сообщения -
-              ЛС/группа/канал. Присутствует фильтрация по встроенному
-              черному/белому списку
-            </span>
-          </div>
-          <div class="project-technical-stack">
-            <b>Используемые технологии:</b>
-            <span>Pyrogram</span>
-            <span>Sqlite</span>
-          </div>
-          <a
-            href="https://github.com/EnderEzhik/*"
-            class="github-link"
-            target="_blank"
-            style="pointer-events: none; color: #ccc"
-          >
-            <i class="bx bxl-github"></i> <strike>GitHub репозиторий</strike>
-          </a>
-        </section>
-        <section class="project">
-          <div class="project-header">
-            <span>Локальный веб интерфейс для телеграмм логгера</span>
-          </div>
-          <div class="project-content">
-            <span>
-              Локально запускаемый веб интерфейс для просмотра сохраненных телеграмм логгером сообщений и медиа. <br />
-              Удобная настройка фильтров и просмотр доступных чатов с историей сообщений
-            </span>
-          </div>
-          <div class="project-technical-stack">
-            <b>Используемые технологии:</b>
-            <span>Flask</span>
-            <span>Sqlite</span>
-          </div>
-          <a
-            href="https://github.com/EnderEzhik/*"
-            class="github-link"
-            target="_blank"
-            style="pointer-events: none; color: #ccc"
-          >
-            <i class="bx bxl-github"></i> <strike>GitHub репозиторий</strike>
-          </a>
-          <a
-            href="http://postimg.su/5RlkuotD"
-            class="github-link"
-            target="_blank"
-            >Внешний вид меню настроек
-          </a>
-          <a
-            href="http://postimg.su/dj8wuq7R"
-            class="github-link"
-            target="_blank"
-            >Внешний вид списка сохраненных чатов
-          </a>
-        </section>
-      </section>
-    </main>
-    <footer>
-      <div class="contacts" id="contacts">
-        <span>Связаться со мной</span>
-        <span><i class="bx bx-envelope"></i> Email: exmaple@email.com</span>
-        <span><i class="bx bxl-telegram"></i> Telegram: @username</span>
-      </div>
-    </footer>
-  </body>
+            </section>
+            <section class="about" id="about">
+                <h2>Опыт</h2>
+                <div class="achievements">
+                    <ul>
+                        <li>
+                            <span class="achievement-title">Яндекс лицей</span>
+                            <div class="achievement-details panel">
+                                <p>Основы программирования на языке Python (1 год)</p>
+                            </div>
+                            <div class="achievement-details panel">
+                                <p>Основы промышленного программирования на языке Python (1 год)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="achievement-title">Samsung IT-school</span>
+                            <div class="achievement-details panel">
+                                <p>Мобильная разработка для Android на Java (не окончено)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="achievement-title">Фриланс</span>
+                            <div class="achievement-details panel">
+                                <p>Проектирование и разработка телеграмм бота для регистрации на мероприятие</p>
+                                <div class="panel-footer">
+                                    <a href="https://github.com/EnderEzhik/RegiBot" class="github-link" target="_blank">
+                                        <i class="bx bxl-github"></i> GitHub репозиторий
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>Мои проекты</h2>
+                <div class="project">
+                    <div class="project-header"><span>REST API Server C#</span></div>
+                    <div class="project-content">
+                        <span>Веб апи сервер для управления подписками пользователей на опубликованные приложения</span>
+                    </div>
+                    <div class="project-technical-stack">
+                        <b>Используемые технологии:</b>
+                        <span>ASP.NET Core</span>
+                        <span>EntityFramework</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <span>Логгер сообщений для телеграмм аккаунта</span>
+                    </div>
+                    <div class="project-content">
+                        <span>
+                            Pyrogram клиент для обработки и сохранения входящих/исходящих сообщений в аккаунте
+                            телеграмм.<br />
+                            Сохраняет сообщения, историю изменений сообщений и помечает удаленные сообщения.<br />
+                            Сохраняет все виды медиа - фото, видео, голосовые, стикеры, гифки и т.д.<br />
+                            Встроены настройки для фильтрации источника сообщения - ЛС/группа/канал. Присутствует
+                            фильтрация по встроенному черному/белому списку
+                        </span>
+                    </div>
+                    <div class="project-technical-stack">
+                        <b>Используемые технологии:</b>
+                        <span>Pyrogram</span>
+                        <span>Sqlite</span>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <span>Локальный веб интерфейс для телеграмм логгера</span>
+                    </div>
+                    <div class="project-content">
+                        <span>
+                            Локально запускаемый веб интерфейс для просмотра сохраненных телеграмм логгером сообщений и
+                            медиа. <br />
+                            Удобная настройка фильтров и просмотр доступных чатов с историей сообщений
+                        </span>
+                    </div>
+                    <div class="project-technical-stack">
+                        <b>Используемые технологии:</b>
+                        <span>Flask</span>
+                        <span>Sqlite</span>
+                    </div>
+                    <a href="http://postimg.su/5RlkuotD" class="github-link" target="_blank"
+                        >Внешний вид меню настроек
+                    </a>
+                    <a href="http://postimg.su/dj8wuq7R" class="github-link" target="_blank"
+                        >Внешний вид списка сохраненных чатов
+                    </a>
+                    <a href="http://postimg.su/HUEsLG6I" class="github-link" target="_blank">
+                        Внешний вид истории сообщений
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contacts" id="contacts">
+                <span>Связаться со мной</span>
+                <span><i class="bx bx-envelope"></i> Email: example@email.com</span>
+                <span><i class="bx bxl-telegram"></i> Telegram: @username</span>
+                <span
+                    ><a href="https://github.com/EnderEzhik" target="_blank"
+                        ><i class="bx bxl-github"></i> GitHub</a
+                    ></span
+                >
+            </div>
+        </footer>
+    </body>
 </html>
