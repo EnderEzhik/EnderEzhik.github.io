@@ -415,7 +415,7 @@ main {
 }
 
 .project-content {
-    max-width: 75%;
+    max-width: 85%;
     font-size: var(--primary-font-size);
     line-height: 1.6;
     margin-bottom: 20px;
