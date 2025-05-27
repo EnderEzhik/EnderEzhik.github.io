@@ -745,3 +745,16 @@ footer::before {
         font-size: var(--mobile-primary-font-size);
     }
 }
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 28px;
+    }
+    .home-content h3 {
+        font-size: 18px;
+    }
+
+    .contacts span {
+        font-size: 16px;
+    }
+}
