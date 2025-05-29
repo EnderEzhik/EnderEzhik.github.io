@@ -9,7 +9,10 @@
     </head>
     <body>
         <header class="header">
-            <a href="#" class="logo">Logo</a>
+            <a href="#" class="logo">
+                <img src="imgs/i.webp" alt="Логотип" class="logo-img">
+                Logo
+            </a>
             <nav class="navbar">
                 <a href="#home">Главная</a>
                 <a href="#about">Мой опыт</a>
@@ -104,86 +107,88 @@
             </section>
             <section class="projects" id="projects">
                 <h2>Мои проекты</h2>
-                <div class="project">
-                    <div class="project-header"><span>SecureAccess Gateway – Backend</span></div>
-                    <div class="project-content">
-                        <span>REST API сервер, обеспечивающий безопасный доступ к защищённым приложениям. Отвечает за аутентификацию, авторизацию, управление пользователями, приложениями и подписками пользователей на приложения. <br>
-                        Функционал: <br>
-                        Аутентификация (JWT) <br>
-                        Управление приложениями, пользователями, подписками (добавление, удаление, изменение) <br>
-                        Логирование и аудит (отслеживание действий пользователей)</span>
+                <div class="projects-grid">
+                    <div class="project">
+                        <div class="project-header"><span>SecureAccess Gateway – Backend</span></div>
+                        <div class="project-content">
+                            <span>REST API сервер, обеспечивающий безопасный доступ к защищённым приложениям. Отвечает за аутентификацию, авторизацию, управление пользователями, приложениями и подписками пользователей на приложения. <br>
+                            Функционал: <br>
+                            Аутентификация (JWT) <br>
+                            Управление приложениями, пользователями, подписками (добавление, удаление, изменение) <br>
+                            Логирование и аудит (отслеживание действий пользователей)</span>
+                        </div>
+                        <div class="project-technical-stack">
+                            <b>Используемые технологии:</b>
+                            <span>C#</span>
+                            <span>ASP.NET Core</span>
+                            <span>Entity Framework Core</span>
+                            <span>MySQL</span>
+                        </div>
                     </div>
-                    <div class="project-technical-stack">
-                        <b>Используемые технологии:</b>
-                        <span>C#</span>
-                        <span>ASP.NET Core</span>
-                        <span>Entity Framework Core</span>
-                        <span>MySQL</span>
+                    <div class="project">
+                        <div class="project-header"><span>SecureAccess Gateway – Desktop Client</span></div>
+                        <div class="project-content">
+                            <span>Десктопное приложение (Windows), предоставляющее удобный интерфейс для подключения к защищённым ресурсам через серверный API. <br>
+                            Функционал: <br>
+                            Удобный GUI (WPF) <br>
+                            Безопасное подключение (использование https и шифрование трафика) <br>
+                            Управление профилями (сохранение сессий, настройки) <br>
+                            Быстрый доступ к часто используемым приложениям</span>
+                        </div>
+                        <div class="project-technical-stack">
+                            <b>Используемые технологии:</b>
+                            <span>C#</span>
+                            <span>WPF</span>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project-header"><span>SecureAccess Gateway – Desktop Client</span></div>
-                    <div class="project-content">
-                        <span>Десктопное приложение (Windows), предоставляющее удобный интерфейс для подключения к защищённым ресурсам через серверный API. <br>
-                        Функционал: <br>
-                        Удобный GUI (WPF) <br>
-                        Безопасное подключение (использование https и шифрование трафика) <br>
-                        Управление профилями (сохранение сессий, настройки) <br>
-                        Быстрый доступ к часто используемым приложениям</span>
+                    <div class="project">
+                        <div class="project-header">
+                            <span>Логгер сообщений для телеграмм аккаунта</span>
+                        </div>
+                        <div class="project-content">
+                            <span>
+                                Pyrogram клиент для обработки и сохранения входящих/исходящих сообщений в аккаунте
+                                телеграмм.<br />
+                                Сохраняет сообщения, историю изменений сообщений и помечает удаленные сообщения.<br />
+                                Сохраняет все виды медиа - фото, видео, голосовые, стикеры, гифки и т.д.<br />
+                                Встроены настройки для фильтрации источника сообщения - ЛС/группа/канал. Присутствует
+                                фильтрация по встроенному черному/белому списку
+                            </span>
+                        </div>
+                        <div class="project-technical-stack">
+                            <b>Используемые технологии:</b>
+                            <span>Python</span>
+                            <span>Pyrogram</span>
+                            <span>Sqlite</span>
+                        </div>
                     </div>
-                    <div class="project-technical-stack">
-                        <b>Используемые технологии:</b>
-                        <span>C#</span>
-                        <span>WPF</span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <span>Логгер сообщений для телеграмм аккаунта</span>
-                    </div>
-                    <div class="project-content">
-                        <span>
-                            Pyrogram клиент для обработки и сохранения входящих/исходящих сообщений в аккаунте
-                            телеграмм.<br />
-                            Сохраняет сообщения, историю изменений сообщений и помечает удаленные сообщения.<br />
-                            Сохраняет все виды медиа - фото, видео, голосовые, стикеры, гифки и т.д.<br />
-                            Встроены настройки для фильтрации источника сообщения - ЛС/группа/канал. Присутствует
-                            фильтрация по встроенному черному/белому списку
-                        </span>
-                    </div>
-                    <div class="project-technical-stack">
-                        <b>Используемые технологии:</b>
-                        <span>Python</span>
-                        <span>Pyrogram</span>
-                        <span>Sqlite</span>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-header">
-                        <span>Локальный веб интерфейс для телеграмм логгера</span>
-                    </div>
-                    <div class="project-content">
-                        <span>
-                            Локально запускаемый веб интерфейс для просмотра сохраненных телеграмм логгером сообщений и
-                            медиа. <br />
-                            Удобная настройка фильтров и просмотр доступных чатов с историей сообщений
-                        </span>
-                    </div>
-                    <div class="project-technical-stack">
-                        <b>Используемые технологии:</b>
-                        <span>Python</span>
-                        <span>Flask</span>
-                        <span>Sqlite</span>
-                    </div>
-                    <a href="http://postimg.su/5RlkuotD" class="github-link" target="_blank"
+                    <div class="project">
+                        <div class="project-header">
+                            <span>Локальный веб интерфейс для телеграмм логгера</span>
+                        </div>
+                        <div class="project-content">
+                            <span>
+                                Локально запускаемый веб интерфейс для просмотра сохраненных телеграмм логгером сообщений и
+                                медиа. <br />
+                                Удобная настройка фильтров и просмотр доступных чатов с историей сообщений
+                            </span>
+                        </div>
+                        <div class="project-technical-stack">
+                            <b>Используемые технологии:</b>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Sqlite</span>
+                        </div>
+                        <a href="http://postimg.su/5RlkuotD" class="github-link" target="_blank"
                         >Внешний вид меню настроек
-                    </a>
-                    <a href="http://postimg.su/dj8wuq7R" class="github-link" target="_blank"
-                        >Внешний вид списка сохраненных чатов
-                    </a>
-                    <a href="http://postimg.su/HUEsLG6I" class="github-link" target="_blank">
-                        Внешний вид истории сообщений
-                    </a>
+                        </a>
+                        <a href="http://postimg.su/dj8wuq7R" class="github-link" target="_blank"
+                            >Внешний вид списка сохраненных чатов
+                        </a>
+                        <a href="http://postimg.su/HUEsLG6I" class="github-link" target="_blank">
+                            Внешний вид истории сообщений
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="contact-form">
