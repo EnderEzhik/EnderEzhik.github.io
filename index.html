@@ -9,10 +9,7 @@
     </head>
     <body>
         <header class="header">
-            <a href="#" class="logo">
-                <img src="imgs/i.webp" alt="Логотип" class="logo-img">
-                Logo
-            </a>
+            <a href="#" class="logo">Logo</a>
             <nav class="navbar">
                 <a href="#home">Главная</a>
                 <a href="#about">Мой опыт</a>
@@ -36,34 +33,23 @@
                     <h2>Backend Developer</h2>
                     <div>
                         <p>
-                            Занимаюсь программированием более 4 лет. За это время я успел поработать с разными
-                            направлениями и технологиями, включая
-                            <strong>C#, Python, Go, C++, Lua и Java</strong>.
+                            Занимаюсь программированием на <strong>C#</strong> более 4 лет.<br>
                         </p>
-
-                        <p>Разрабатывал приложения в различных сферах:</p>
-                        <ul>
-                            <li><strong>Десктопные программы</strong> (включая решения с GUI под Windows)</li>
-                            <li><strong>Веб-приложения</strong></li>
-                            <li><strong>Написание скриптов</strong></li>
-                            <li><strong>Мобильные приложения</strong></li>
-                            <li><strong>Игры</strong></li>
-                        </ul>
 
                         <p>
-                            Мой основной и любимый язык — <strong>C#</strong>, благодаря его мощной экосистеме. На нём я
-                            создал большинство своих проектов:
+                            Основные типы приложений, которые я разрабатывал:
                         </p>
                         <ul>
-                            <li>Телеграм-боты</li>
-                            <li>Консольные утилиты</li>
-                            <li>Десктопные приложения (Windows Forms, WPF)</li>
-                            <li>Фоновые службы для Windows</li>
+                            <li><strong>Телеграм-боты</strong></li>
+                            <li><strong>Консольные утилиты</strong></li>
+                            <li><strong>Десктопные приложения с интерфейсом</strong></li>
+                            <li><strong>Фоновые процессы</strong></li>
+                            <li><strong>Веб-серверы</strong></li>
                         </ul>
 
                         <p>
                             Сейчас углубленно изучаю <strong>ASP.NET Core</strong> и разрабатываю
-                            <strong>RESTful API</strong> в связке с <strong>Entity Framework</strong>.
+                            <strong>REST API</strong> сервер в связке с <strong>Entity Framework</strong>.
                         </p>
                     </div>
                     <div class="home-buttons">
@@ -84,6 +70,12 @@
                             <div class="achievement-details panel">
                                 <p>Основы промышленного программирования на языке Python (1 год)</p>
                             </div>
+                            <div class="achievement-details panel">
+                                <p>Основы программирования на языке Go (настоящее время)</p>
+                            </div>
+                            <div class="achievement-details panel">
+                                <p>Основы программирования на языке C++ (настоящее время)</p>
+                            </div>
                         </li>
                         <li>
                             <span class="achievement-title">Samsung IT-school</span>
@@ -101,6 +93,9 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="achievement-details panel">
+                                <p>Телеграмм бот для парсинга номеров телефона из постов телеграмм канала и их регистрации в розыгрыше</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -109,13 +104,18 @@
                 <h2>Мои проекты</h2>
                 <div class="projects-grid">
                     <div class="project">
-                        <div class="project-header"><span>SecureAccess Gateway – Backend</span></div>
+                        <div class="project-header"><span>EzhikLoader Backend</span></div>
                         <div class="project-content">
-                            <span>REST API сервер, обеспечивающий безопасный доступ к защищённым приложениям. Отвечает за аутентификацию, авторизацию, управление пользователями, приложениями и подписками пользователей на приложения. <br>
-                            Функционал: <br>
-                            Аутентификация (JWT) <br>
-                            Управление приложениями, пользователями, подписками (добавление, удаление, изменение) <br>
-                            Логирование и аудит (отслеживание действий пользователей)</span>
+                            <span>
+                                REST API сервер, обеспечивающий доступ к приложениям на основе подписки.<br>
+                                Основные функции:
+                                <ul>
+                                    <li>авторизацию/аутентификацию пользователей</li>
+                                    <li>управление пользователями</li>
+                                    <li>управление приложениями</li>
+                                    <li>управление подписками</li>
+                                </ul>
+                            </span>
                         </div>
                         <div class="project-technical-stack">
                             <b>Используемые технологии:</b>
@@ -124,35 +124,43 @@
                             <span>Entity Framework Core</span>
                             <span>MySQL</span>
                         </div>
+                        <a href="https://github.com/EnderEzhik/EzhikLoader.Server" class="github-link" target="_blank">
+                            <i class="bx bxl-github"></i> GitHub репозиторий
+                        </a>
                     </div>
                     <div class="project">
-                        <div class="project-header"><span>SecureAccess Gateway – Desktop Client</span></div>
+                        <div class="project-header"><span>EzhikLoader Frontend</span></div>
                         <div class="project-content">
-                            <span>Десктопное приложение (Windows), предоставляющее удобный интерфейс для подключения к защищённым ресурсам через серверный API. <br>
-                            Функционал: <br>
-                            Удобный GUI (WPF) <br>
-                            Безопасное подключение (использование https и шифрование трафика) <br>
-                            Управление профилями (сохранение сессий, настройки) <br>
-                            Быстрый доступ к часто используемым приложениям</span>
+                            <span>
+                                Десктопное приложение, предоставляющее удобный интерфейс для работы с сервером EzhikLoader.<br>
+                                Основные функции:
+                                <ul>
+                                    <li>Регистрация/Авторизация</li>
+                                    <li>Получить список всех приложений</li>
+                                    <li>Оформить подписку на приложение</li>
+                                    <li>Получить список приложений с оформленной подпиской</li>
+                                    <li>Скачать и запустить доступные приложения</li>
+                                </ul>
+                            </span>
                         </div>
                         <div class="project-technical-stack">
                             <b>Используемые технологии:</b>
                             <span>C#</span>
                             <span>WPF</span>
+                            <span>Entity Framework Core</span>
+                            <span>SQLite</span>
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project-header">
-                            <span>Логгер сообщений для телеграмм аккаунта</span>
-                        </div>
+                        <div class="project-header"><span>SaveGram Backend</span></div>
                         <div class="project-content">
                             <span>
-                                Pyrogram клиент для обработки и сохранения входящих/исходящих сообщений в аккаунте
+                                Клиент для обработки и сохранения входящих/исходящих сообщений в аккаунте
                                 телеграмм.<br />
-                                Сохраняет сообщения, историю изменений сообщений и помечает удаленные сообщения.<br />
-                                Сохраняет все виды медиа - фото, видео, голосовые, стикеры, гифки и т.д.<br />
-                                Встроены настройки для фильтрации источника сообщения - ЛС/группа/канал. Присутствует
-                                фильтрация по встроенному черному/белому списку
+                                Сохраняет сообщения, историю изменений сообщений и удаленные сообщения.<br />
+                                Сохраняет медиа - фото, видео, голосовые, стикеры, гифки и т.д.<br />
+                                Встроены фильтры источников сообщения - лс/бот/группа/канал.<br>
+                                Присутствует фильтрация по встроенному черному/белому списку
                             </span>
                         </div>
                         <div class="project-technical-stack">
@@ -163,54 +171,36 @@
                         </div>
                     </div>
                     <div class="project">
-                        <div class="project-header">
-                            <span>Локальный веб интерфейс для телеграмм логгера</span>
-                        </div>
+                        <div class="project-header"><span>SaveGram Frontend</span></div>
                         <div class="project-content">
                             <span>
-                                Локально запускаемый веб интерфейс для просмотра сохраненных телеграмм логгером сообщений и
-                                медиа. <br />
-                                Удобная настройка фильтров и просмотр доступных чатов с историей сообщений
+                                Локальный веб интерфейс, позволяющий просматривать сохраненные сообщений и медиа, настраивать фильтры источника сообщений и черный/белый список.<br />
                             </span>
                         </div>
-                        <div class="project-technical-stack">
-                            <b>Используемые технологии:</b>
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>Sqlite</span>
-                        </div>
-                        <a href="http://postimg.su/5RlkuotD" class="github-link" target="_blank"
-                        >Внешний вид меню настроек
-                        </a>
                         <a href="http://postimg.su/dj8wuq7R" class="github-link" target="_blank"
                             >Внешний вид списка сохраненных чатов
                         </a>
                         <a href="http://postimg.su/HUEsLG6I" class="github-link" target="_blank">
                             Внешний вид истории сообщений
                         </a>
+                        <a href="http://postimg.su/5RlkuotD" class="github-link" target="_blank"
+                        >Внешний вид меню настроек
+                        </a>
+                        <div class="project-technical-stack">
+                            <b>Используемые технологии:</b>
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Sqlite</span>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section class="contact-form">
-                <h2>Написать мне</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение</label>
-                        <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Отправить</button>
-                </form>
             </section>
         </main>
         <footer>
             <div class="contacts" id="contacts">
                 <span>Связаться со мной</span>
-                <span><i class="bx bx-envelope"></i> Email: example@email.com</span>
-                <span><i class="bx bxl-telegram"></i> Telegram: @username</span>
+                <span><i class="bx bx-envelope"></i> Email: EnderEzhik@yandex.ru</span>
+                <span><i class="bx bxl-telegram"></i> Telegram: @EnderEzh</span>
                 <span
                     ><a href="https://github.com/EnderEzhik" target="_blank"
                         ><i class="bx bxl-github"></i> GitHub</a

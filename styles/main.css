@@ -402,7 +402,7 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     gap: 30px;
     animation: slideBottom 1s ease forwards;
     opacity: 0;
@@ -436,8 +436,13 @@ main {
     margin-bottom: 20px;
 }
 
+.project-content span ul {
+    padding-left: 20px;
+    /* list-style: none; */
+}
+
 .project-technical-stack {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
     color: var(--second-color);
     font-size: 16px;
     line-height: 1.8;
@@ -544,7 +549,9 @@ main {
 /* Footer Styles */
 footer {
     background: linear-gradient(to bottom, #081b29, #0a2a3a);
-    padding: 2% 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     position: relative;
     overflow: hidden;
 }
